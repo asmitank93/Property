@@ -14,6 +14,8 @@
 		E717A3661C72DA5D0057F89B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E717A3651C72DA5D0057F89B /* Images.xcassets */; };
 		E717A3691C72DA5D0057F89B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E717A3671C72DA5D0057F89B /* LaunchScreen.xib */; };
 		E717A3751C72DA5D0057F89B /* PropertyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E717A3741C72DA5D0057F89B /* PropertyTests.m */; };
+		E717A37F1C72DB910057F89B /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E717A37E1C72DB910057F89B /* libsqlite3.dylib */; };
+		E717A3821C72DD760057F89B /* DBOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E717A3811C72DD760057F89B /* DBOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		E717A36E1C72DA5D0057F89B /* PropertyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PropertyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E717A3731C72DA5D0057F89B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E717A3741C72DA5D0057F89B /* PropertyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PropertyTests.m; sourceTree = "<group>"; };
+		E717A37E1C72DB910057F89B /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		E717A3801C72DD760057F89B /* DBOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBOperation.h; sourceTree = "<group>"; };
+		E717A3811C72DD760057F89B /* DBOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E717A37F1C72DB910057F89B /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +69,9 @@
 		E717A34C1C72DA5C0057F89B = {
 			isa = PBXGroup;
 			children = (
+				E717A3801C72DD760057F89B /* DBOperation.h */,
+				E717A3811C72DD760057F89B /* DBOperation.m */,
+				E717A37E1C72DB910057F89B /* libsqlite3.dylib */,
 				E717A3571C72DA5D0057F89B /* Property */,
 				E717A3711C72DA5D0057F89B /* PropertyTests */,
 				E717A3561C72DA5D0057F89B /* Products */,
@@ -222,6 +231,7 @@
 				E717A3611C72DA5D0057F89B /* ViewController.m in Sources */,
 				E717A35E1C72DA5D0057F89B /* AppDelegate.m in Sources */,
 				E717A35B1C72DA5D0057F89B /* main.m in Sources */,
+				E717A3821C72DD760057F89B /* DBOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

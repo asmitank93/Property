@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
-
-
+#import "DBOperation.h"
+@interface ViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+{
+    DBOperation *dbop;
+    NSArray *arr_get;
+}
+@property (weak, nonatomic) IBOutlet UITableView *tbl_vw;
 @end
 
